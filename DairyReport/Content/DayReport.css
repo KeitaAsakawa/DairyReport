@@ -1,0 +1,204 @@
+﻿/* Datepicker*/
+/* 年プルダウンの変更 */
+select.ui-datepicker-year {
+    height: 2em !important; /* 高さ調整 */
+    margin-right: 5px !important; /* 「年」との余白設定 */
+    width: 70px !important; /* 幅調整 */
+}
+/* 月プルダウンの変更 */
+select.ui-datepicker-month {
+    height: 2em !important; /* 高さ調整 */
+    margin-left: 5px !important; /* 「年」との余白設定 */
+    width: 70px !important; /* 幅調整 */
+}
+
+/* 日曜日のカラー設定 */
+td.ui-datepicker-week-end:first-child a.ui-state-default {
+    background-color: #ffecec; /* 背景色を設定 */
+    color: #f00 !important; /* 文字色を設定 */
+}
+/* 土曜日のカラー設定 */
+td.ui-datepicker-week-end:last-child a.ui-state-default {
+    background-color: #eaeaff; /* 背景色を設定 */
+    color: #00f !important; /* 文字色を設定 */
+}
+/* ホバー時の動作 */
+td.ui-datepicker-week-end a.ui-state-hover {
+    opacity: 0.8;
+}
+/* 当日を示す色はそのまま */
+td.ui-datepicker-week-end a.ui-state-highlight {
+    background-color: #fffa90 !important;
+}
+/* カレンダーアイコン*/
+img.ui-datepicker-trigger {
+    cursor: pointer; /* カーソルの形状：リンクカーソル */
+    margin-left: 7px !important;
+    vertical-align: middle;
+}
+
+/* ボタングラデーション*/
+.btn-gradient {
+    display: inline-block;
+    padding: 0.2em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: normal;
+    color: whitesmoke;
+    background-image: linear-gradient(#709dff 0%, #b0c9ff 50%);
+    transition: .4s;
+}
+
+    .btn-gradient:hover {
+        background-image: linear-gradient(#709dff 100%, #b0c9ff 100%);
+    }
+
+/* DairyReport-Editページ固有*/
+#DairyReport-Edit {
+    border-radius: 10px;
+    padding: 17px 22px 17px 32px;
+    margin: 15px auto 0 auto;
+    background: linear-gradient(to bottom, whitesmoke, #FFF);
+    border: groove silver 2px;
+}
+    #DairyReport-Edit .head{
+        padding: 2px 0 15px 0;
+    }
+    /* サブタイトル部分*/
+    #DairyReport-Edit .sub-title {
+        font-size: x-large;
+    }
+    /* */
+    #DairyReport-Edit .report{
+        border: groove silver 2px;
+        border-radius: 10px;
+        padding: 2px 2px 2px 2px;
+    }
+    /* リスト部分*/
+    #DairyReport-Edit ul {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 22px 10px 32px;
+        list-style: none;
+        overflow: hidden;
+    }
+
+    #DairyReport-Edit li {
+        display: block;
+        float: left;
+    }
+
+        #DairyReport-Edit li button {
+            width: 180px;
+            text-align: center;
+            padding: 0.5em 1em;
+            letter-spacing: 0.2em;
+        }
+
+    /* テキストエリア部分*/
+    #DairyReport-Edit .content {
+        overflow: hidden;
+        padding: 0 0 0 5px;
+    }
+
+    #DairyReport-Edit .content-left {
+        width: 530px;
+        float: left;
+    }
+
+    #DairyReport-Edit .left-text {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    #DairyReport-Edit .content-right1 {
+        width: 530px;
+        float: right;
+        overflow: hidden;
+    }
+
+        #DairyReport-Edit .content-right1 input {
+            float: right;
+            margin: 0 10px 1px 0;
+        }
+
+    #DairyReport-Edit .right-text1 {
+        padding-top: 4px;
+        float: left;
+    }
+
+    #DairyReport-Edit .content-right2 {
+        width: 530px;
+        float: right;
+        padding-top: 12px;
+        overflow: hidden;
+    }
+
+        #DairyReport-Edit .content-right2 input {
+            float: right;
+            margin: 0 10px 1px 0;
+        }
+
+    #DairyReport-Edit .right-text2 {
+        padding-top: 4px;
+        float: left;
+    }
+
+    /* foot部分*/
+    #DairyReport-Edit .foot {
+        padding: 15px 0 10px 0;
+        overflow: hidden;
+    }
+
+    #DairyReport-Edit .f-box1 {
+        width: 180px;
+        float: left;
+    }
+
+    #DairyReport-Edit .f-box2 {
+        width: 180px;
+        float: left;
+    }
+
+    #DairyReport-Edit .f-box3 {
+        width: 180px;
+        float: left;
+    }
+
+    #DairyReport-Edit .f-box4 {
+        width: 130px;
+        float: left;
+    }
+
+    #DairyReport-Edit .f-box5 {
+        width: 130px;
+        float: left;
+    }
+
+    #DairyReport-Edit .f-box6 {
+        width: 130px;
+        float: left;
+    }
+
+    #DairyReport-Edit .f-box7 {
+        width: 150px;
+        float: left;
+    }
+    #DairyReport-Edit .foot div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #DairyReport-Edit .foot select {
+        width: 130px;
+        text-align: center;
+    }
+    #DairyReport-Edit .foot input {
+        width: 85px;
+        text-align: center;
+    }
+    #DairyReport-Edit .foot .f-box7 input {
+        margin: 14px 0 0 10px;
+        width: 120px;
+        text-align: center;
+        padding: 0.5em 1em;
+    }

@@ -1,0 +1,94 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<div id="DairyReport-Edit">
+    @using (Html.BeginForm("Edit", "DairyReport", new { name = "indexForm" }))
+    {
+        <div class="row head">
+            <div class="col-md-4">
+                <label class="sub-title">臨床工学部　業務日報</label>
+            </div>
+            <div class="col-md-4">
+                <button type="submit" class="btn-gradient" value="" name="">
+                    <span class="glyphicon glyphicon-triangle-left"></span>
+                </button>
+                <!--todoモデルと紐づける-->
+                <input type="text" class="text-left datepicker" readonly="readonly" />
+                <button type="submit" class="btn-gradient" value="" name="">
+                    <span class="glyphicon glyphicon-triangle-right"></span>
+                </button>
+            </div>
+            <div class="col-md-4">
+                <input type="submit" name="" value="NEWページ作成" class="btn-gradient">
+            </div>
+        </div>
+        <div class="report">
+            <ul>
+                <li><button type="button" class="btn-gradient" id="">日勤</button></li>
+                <li><button type="button" class="btn-gradient" id="">準夜</button></li>
+                <li><button type="button" class="btn-gradient" id="">外来</button></li>
+                <li><button type="button" class="btn-gradient" id="">メンテナンス</button></li>
+                <li><button type="button" class="btn-gradient" id="">特記事項</button></li>
+            </ul>
+            <div class="content">
+                <div class="content-left">
+                    <div class="left-text">申し送り事項</div>
+                    <textarea cols="72" rows="21"></textarea>
+                </div>
+                <div class="content-right1">
+                    <div class="right-text1">指示変更・検査</div>
+                    <input type="submit" name="" value="検索" class="btn-gradient" />
+                    <textarea cols="72" rows="9"></textarea>
+                </div>
+                <div class="content-right2">
+                    <div class="right-text2">日勤入院患者検査</div>
+                    <input type="submit" name="" value="検索" class="btn-gradient" />
+                    <textarea cols="72" rows="9"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="f-box1">
+                <div>準備室清掃</div>
+                <select>
+                    <option value=""></option>
+                    <option value="">浅川</option>
+                    <option value="">山田</option>
+                </select>
+            </div>
+            <div class="f-box2">
+                <div>機械室清掃</div>
+                <select>
+                    <option value=""></option>
+                    <option value="">浅川</option>
+                    <option value="">山田</option>
+                </select>
+            </div>
+            <div class="f-box3">
+                <div>技師室清掃</div>
+                <select>
+                    <option value=""></option>
+                    <option value="">浅川</option>
+                    <option value="">山田</option>
+                </select>
+            </div>
+            <div class="f-box4">
+                <div>翌日・日勤数</div>
+                <input type="text" />
+            </div>
+            <div class="f-box5">
+                <div>翌日・準夜数</div>
+                <input type="text" />
+            </div>
+
+            <div class="f-box6">
+                <div>翌日・合計数</div>
+                <input type="text" readonly="readonly" />
+            </div>
+            <div class="f-box7">
+                <input type="submit" name="" value="保存" class="btn-gradient" />
+            </div>
+        </div>
+    }
+</div>
+
